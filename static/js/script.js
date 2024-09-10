@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('receipt-form');
     const receipt = document.getElementById('receipt');
 
+    // Set the current date
+    const today = new Date();
+    const formattedDate = `${today.getMonth() + 1}/${today.getDate()}/${today.getFullYear()}`;
+    document.getElementById('date').textContent = formattedDate;
+
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         

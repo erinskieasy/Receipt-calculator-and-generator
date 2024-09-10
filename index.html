@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Receipt Generator</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="receipt-form">
+            <label for="num-boxes">Number of Boxes:</label>
+            <input type="number" id="num-boxes" required>
+            <label for="prev-balance">Previous Balance:</label>
+            <input type="number" id="prev-balance" step="0.01" required>
+            <label for="buy-rate">Buy Rate:</label>
+            <input type="number" id="buy-rate" step="0.01" required value="1262">
+            <label for="sell-rate">Sell Rate:</label>
+            <input type="number" id="sell-rate" step="0.01" required value="1275">
+            <button type="submit">Generate Receipt</button>
+        </form>
+
+        <div id="receipt" class="receipt" style="display: none;">
+            <h1>Cash Receipt</h1>
+            <p class="company">Easy Peasy Distributors</p>
+            <p class="date">Date: <span id="date" class="underline"></span></p>
+            <p class="received-from">Received From: <span class="underline">Carla's Groceries</span> the amount of $<span id="amount" class="underline">0.00</span></p>
+            <p class="delivered">Delivered: <span id="delivered" class="underline">0</span></p>
+            <div class="balance-section">
+                <p>Outstanding balance $<span id="outstanding-balance" class="underline">0.00</span></p>
+                <p>New balance $<span id="new-balance" class="underline">0.00</span></p>
+                <p>Total balance $<span id="total-balance" class="underline">0.00</span></p>
+            </div>
+            <div class="signature-section">
+                <p>Received By: <span class="signature">Erinski Easy</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
