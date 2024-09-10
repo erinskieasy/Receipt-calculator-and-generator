@@ -1,21 +1,4 @@
-// Function to get the current date in the format: Day, Month Date, Year
-function getCurrentDate() {
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    
-    const now = new Date();
-    const day = days[now.getDay()];
-    const month = months[now.getMonth()];
-    const date = now.getDate();
-    const year = now.getFullYear();
-    
-    return `${day}, ${month} ${date}, ${year}`;
-}
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Set the current date in the date span
-    document.getElementById('date').textContent = getCurrentDate();
-
     const form = document.getElementById('receipt-form');
     const receipt = document.getElementById('receipt');
 
