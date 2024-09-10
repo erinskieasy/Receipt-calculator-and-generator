@@ -1,0 +1,107 @@
+body {
+    font-family: Times New Roman, serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+}
+
+#receipt-form {
+    margin-bottom: 20px;
+}
+
+.receipt {
+    font-size: 16px;
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.date {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.received-from, .delivered {
+    margin-bottom: 10px;
+}
+
+.underline {
+    text-decoration: underline;
+    display: inline-block;
+    min-width: 150px;
+}
+
+.delivered .underline {
+    min-width: 300px;
+}
+
+.balance-section {
+    margin-top: 20px;
+}
+
+.balance-section p {
+    margin: 5px 0;
+}
+
+.signature-section {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 24px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* Form styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
