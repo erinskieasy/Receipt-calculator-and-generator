@@ -2,14 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('receipt-form');
     const receipt = document.getElementById('receipt');
 
-    const buyRate = 1262;
-    const sellRate = 1275;
-
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
         const numBoxes = parseInt(document.getElementById('num-boxes').value);
         const prevBalance = parseFloat(document.getElementById('prev-balance').value);
+        const buyRate = parseFloat(document.getElementById('buy-rate').value);
+        const sellRate = parseFloat(document.getElementById('sell-rate').value);
 
         const amount = numBoxes * buyRate;
         const outstandingBalance = prevBalance - amount;
